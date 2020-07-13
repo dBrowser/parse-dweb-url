@@ -1,7 +1,7 @@
 {
-  "name": "parse-dat-url",
-  "version": "3.0.3",
-  "description": "Node's url.parse() but updated to support versioned dat URLs.",
+  "name": "parse-dweb-url",
+  "version": "1.1.0",
+  "description": "Library for parsing dweb:// URLs.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
