@@ -3,12 +3,12 @@ const parse = isNode ? require('url').parse : browserParse
 
 const SCHEME_REGEX = /[a-z]+:\/\//i
 //                   1          2      3        4
-const VERSION_REGEX = /^(dat:\/\/)?([^/]+)(\+[^/]+)(.*)$/i
+const VERSION_REGEX = /^(dweb:\/\/)?([^/]+)(\+[^/]+)(.*)$/i
 
 module.exports = function parseDatURL (str, parseQS) {
   // prepend the scheme if it's missing
   if (!SCHEME_REGEX.test(str)) {
-    str = 'dat://' + str
+    str = 'dweb://' + str
   }
 
   var parsed, version = null, match = VERSION_REGEX.exec(str)
